@@ -61,4 +61,5 @@ def compute_features_fn(input_df, timestamp_column, start_date, end_date):
             _is_weekend(F.col("window.end")).alias("dropoff_is_weekend"),
         )
     )
+    print("dropoffzip_features schema: This is a new commit.....")
     return dropoffzip_features
